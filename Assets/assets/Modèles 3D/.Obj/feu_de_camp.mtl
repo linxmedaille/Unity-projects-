@@ -1,0 +1,22 @@
+# Blender 4.3.2 MTL File: 'feu_de_camp.blend'
+# www.blender.org
+
+newmtl Matériau
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/eloif/Downloads/Bureau/Tom/image de textures/pngtree-seamless-dark-grey-stone-texture-image_1608089.jpg
+
+newmtl Matériau.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/eloif/Downloads/Bureau/Tom/image de textures/texture-relief-ecorce-brune-arbre-se-bouchent_158595-6482.png
