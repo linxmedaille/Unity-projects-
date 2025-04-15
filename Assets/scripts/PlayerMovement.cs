@@ -4,6 +4,7 @@ using UnityEngine.Rendering;
 using TMPro;
 public class PlayerMovement : MonoBehaviour
 {
+    private Animator anim;
     private Rigidbody rb;
     public float moveSpeed;
     public float jumpHeight;
@@ -14,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
         rb.constraints = RigidbodyConstraints.FreezeRotation;
+        
     }
 
     // Update is called once per frame
@@ -22,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     {
         isHorisontalPressed = Input.GetButton("Horizontal");
         isJumpPressed = Input.GetButton("Jump");
+        anim.SetBool("isRunning", isHorisontalPressed);
+
     }
     private void FixedUpdate()
     {
@@ -33,10 +38,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isHorisontalPressed)
         {
+            
             Vector3 currentVelocity = rb.linearVelocity;
             rb.linearVelocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, currentVelocity.y, 0);
-
+            
         }
+
 
     }
 
@@ -57,5 +64,9 @@ public class PlayerMovement : MonoBehaviour
             isInTheAir = false;
             rb.linearVelocity = Vector3.zero;
         }
+    }
+    public void resetAnimations()
+    {
+        anim.SetBool("isRunning", false);
     }
 }
