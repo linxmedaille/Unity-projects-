@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isHorisontalPressed = Input.GetButton("Horizontal");
         isJumpPressed = Input.GetButton("Jump");
-        anim.SetBool("isRunning", isHorisontalPressed);
+        //anim.SetBool("isRunning", isHorisontalPressed);
 
     }
     private void FixedUpdate()
@@ -65,8 +65,8 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
         }
     }
-    public void resetAnimations()
-    {
-        anim.SetBool("isRunning", false);
-    }
+    //public void resetAnimations()
+   // {
+    //    anim.SetBool("isRunning", false);
+   // }
 }

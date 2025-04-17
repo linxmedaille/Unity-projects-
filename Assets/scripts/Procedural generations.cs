@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class MeshGenerator : MonoBehaviour
 {
+    public GameObject[] myPrefabs;
     Mesh mesh;
     MeshCollider meshCollider;
     Vector3[] vertices;
     int[] triangles;
     public int xSize = 20;
     public int zSize = 20;
-
-    public float strength = 0.3f;
-
+    public float treeDensity;
+    public float strength;
+    List<Vector3> placedTrees = new List<Vector3>();
+    public float minDistance; // adjust as needed
     void Start()
     {
         mesh = new Mesh();
@@ -20,6 +24,7 @@ public class MeshGenerator : MonoBehaviour
         CreateShape();
         UpdateMesh();
         meshCollider = gameObject.AddComponent<MeshCollider>();
+        generateTrees();
     }
 
     void CreateShape()
@@ -69,6 +74,79 @@ public class MeshGenerator : MonoBehaviour
 
         mesh.RecalculateNormals();
         transform.position = new Vector3(-xSize/2,0 , -zSize / 2);
+    }
+    /**
+    void generateTrees()
+    {
+        placedTrees.Clear();
+        for (int i = 0; i < vertices.Length; i++)
+        {
+
+            float yValue = vertices[i].y;
+            if (yValue > treeDensity)
+            {
+                if (vertices[i].x > xSize / 2)
+                {
+                    Vector3 positionToGenerate = new Vector3(vertices[i].x-xSize , yValue+5, vertices[i].z );
+                    placedTrees.Add(positionToGenerate);
+                    foreach(Vector3 treePos in placedTrees)
+                    {
+                        if (!(Vector3.Distance(treePos, positionToGenerate) < minDistance))
+                        {
+                            GameObject newObject = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, 0f, 0f));
+                        }
+                    }
+                
+                    
+                }
+                else
+                {
+                    Vector3 positionToGenerate = new Vector3(vertices[i].x , yValue + 5, vertices[i].z );
+                    placedTrees.Add(positionToGenerate);
+                    foreach (Vector3 treePos in placedTrees)
+                    {
+                        if (!(Vector3.Distance(treePos, positionToGenerate) < minDistance))
+                        {
+                            GameObject newObject = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, 0f, 0f));
+                        }
+                    }
+                }
+                 
+               
+            }
+            
+        }
+   
+    }
+    **/
+    void generateTrees()
+    {
+        float noiseScale = 0.5f;      // Controls how spread-out noise is
+        float noiseThreshold = 0.6f;  // Higher = fewer trees
+        int step = 4;                 // Check every 5th vertex to space things out
+
+        for (int i = 0; i < vertices.Length; i += step)
+        {
+            float yValue = vertices[i].y;
+            Debug.Log(yValue);
+
+
+            float noise = Mathf.PerlinNoise(vertices[i].x * noiseScale, vertices[i].z * noiseScale);
+
+                if (noise > noiseThreshold)
+                {
+                    Vector3 positionToGenerate = new Vector3(
+                        vertices[i].x > xSize / 2 ? vertices[i].x - xSize : vertices[i].x,
+                        yValue+5,
+                        vertices[i].z
+                    );
+
+                    GameObject newTree = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                    newTree.transform.localScale *= Random.Range(0.8f, 1.3f);
+
+
+            }
+        }
     }
 
 }
