@@ -17,9 +17,9 @@ public class MeshGenerator : MonoBehaviour
     {
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-        meshCollider = gameObject.AddComponent<MeshCollider>();
         CreateShape();
         UpdateMesh();
+        meshCollider = gameObject.AddComponent<MeshCollider>();
     }
 
     void CreateShape()
@@ -68,6 +68,7 @@ public class MeshGenerator : MonoBehaviour
         mesh.triangles = triangles;
 
         mesh.RecalculateNormals();
-
+        transform.position = new Vector3(-xSize/2,0 , -zSize / 2);
     }
+
 }
