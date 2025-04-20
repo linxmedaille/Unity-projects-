@@ -7,11 +7,13 @@ using UnityEngine;
 
 public class MeshGenerator : MonoBehaviour
 {
+
     public GameObject[] myPrefabs;
     public float noiseScale = 0.5f; // Controls how spread-out noise is
     public float noiseThreshold = 0.6f; // Higher = fewer trees
     public float biomeScale = 0.1f;
-
+    float biomeOffsetX;
+    float biomeOffsetZ;
     Mesh mesh;
     MeshCollider meshCollider;
     Vector3[] vertices;
@@ -25,11 +27,14 @@ public class MeshGenerator : MonoBehaviour
     void Start()
     {
         mesh = new Mesh();
+        biomeOffsetX = Random.Range(0f, 1000f);
+        biomeOffsetZ = Random.Range(0f, 1000f);
         GetComponent<MeshFilter>().mesh = mesh;
         CreateShape();
         UpdateMesh();
         meshCollider = gameObject.AddComponent<MeshCollider>();
         generateTrees();
+
     }
 
     void CreateShape()
@@ -141,7 +146,7 @@ public class MeshGenerator : MonoBehaviour
 
     string GetBiome(float x, float z)
     {
-        float biomeValue = Mathf.PerlinNoise(x * biomeScale, z * biomeScale);
+        float biomeValue = Mathf.PerlinNoise((x + biomeOffsetX) * biomeScale, (z + biomeOffsetZ) * biomeScale); ;
 
         if (biomeValue < 0.3f) return "Oak";
         else if (biomeValue < 0.5f) return "Grassland";
