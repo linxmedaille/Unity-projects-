@@ -26,7 +26,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -91,10 +91,10 @@ Material:
     - _QueueOffset: 0
     - _REFLECTIONS_IOR: 1.52
     - _REFLECTIONS_ROUGHNESS: 1
-    - _REFLECTIONS_WEIGHT: 0
+    - _REFLECTIONS_WEIGHT: 1
     - _TRANSPARENCY: 0
     m_Colors:
-    - _BASE_COLOR: {r: 0.39018843, g: 0.5622641, b: 0.22808823, a: 1}
+    - _BASE_COLOR: {r: 0.17948815, g: 0.5773585, b: 0.12091848, a: 1}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
     - _REFLECTIONS_COLOR: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
