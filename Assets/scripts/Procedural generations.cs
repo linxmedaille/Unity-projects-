@@ -112,7 +112,7 @@ public class MeshGenerator : MonoBehaviour
             Vector3 origin = new Vector3(xValue, 10, vertices[i].z);
             Vector3 direction = Vector3.down;
             float randomScale = Random.Range(0.8f, 1.4f);
-            int randomTree = Random.Range(0,2);
+            int randomTree = Random.Range(0,3);
 
             // Apply the biome offset here as well
             string biome = GetBiome((vertices[i].x), (vertices[i].z)); // Apply offsets to biome
@@ -144,6 +144,17 @@ public class MeshGenerator : MonoBehaviour
                             }
                             newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         }
+                        if (randomTree == 2)
+                        {
+                            newTree = Instantiate(myPrefabs[2], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y);
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        }
+
 
                         break;
 
@@ -179,6 +190,42 @@ public class MeshGenerator : MonoBehaviour
                             newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         }
                         break;
+                    case "Birch":
+                        if (randomTree == 0)
+                        {
+                            newTree = Instantiate(myPrefabs[6], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y);
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        }
+                        if (randomTree == 1)
+                        {
+                            newTree = Instantiate(myPrefabs[7], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y);
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        }
+                        if (randomTree == 2)
+                        {
+                            newTree = Instantiate(myPrefabs[8], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y);
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        }
+
+
+
+                        break;
+                        
                 }
             }
         }
@@ -190,7 +237,7 @@ public class MeshGenerator : MonoBehaviour
 
         if (biomeValue < 0.3f) return "Oak";
         else if (biomeValue < 0.5f) return "Grassland";
-        else if (biomeValue < 0.7f) return "Forest";
+        else if (biomeValue < 0.7f) return "Birch";
         else if (biomeValue < 0.9f) return "Spruce";
         else return "Snow";
     }
@@ -203,7 +250,7 @@ public class MeshGenerator : MonoBehaviour
                 return new Color(0.6f, 0.4f, 0.1f); // Light brownish color for Oak
             case "Grassland":
                 return new Color(0.8f, 0.8f, 0.2f); // Yellowish color for Grassland
-            case "Forest":
+            case "Birch":
                 return new Color(0.2f, 0.6f, 0.2f); // Dark green color for Forest
             case "Spruce":
                 return new Color(0.3f, 0.5f, 0.3f); // Lighter green for Spruce
