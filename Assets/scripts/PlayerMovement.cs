@@ -16,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
-        
+        rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+
     }
 
     // Update is called once per frame

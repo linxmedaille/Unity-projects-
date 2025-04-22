@@ -4,6 +4,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.InputSystem.Android;
 
 public class MeshGenerator : MonoBehaviour
 {
@@ -46,11 +47,11 @@ public class MeshGenerator : MonoBehaviour
         {
             for (int x = 0; x <= xSize; x++)
             {
-                float y = Mathf.PerlinNoise(x * strength, z * strength) * 2f;
-                vertices[i] = new Vector3(x, y, z);
+                float y = Mathf.PerlinNoise(x * strength, z * strength) * 4;
+                vertices[i] = new Vector3(x * 4f, y, z * 4f);
 
-                // Get biome color based on Perlin noise
-                string biome = GetBiome(x, z);
+                // Apply biome offset when determining biome color
+                string biome = GetBiome((vertices[i].x), (vertices[i].z));
                 vertexColors[i] = GetBiomeColor(biome); // Assign color based on biome
 
                 i++;
@@ -58,24 +59,26 @@ public class MeshGenerator : MonoBehaviour
         }
 
         triangles = new int[xSize * zSize * 6];
-        int vert = 0;
         int tris = 0;
 
         for (int z = 0; z < zSize; z++)
         {
             for (int x = 0; x < xSize; x++)
             {
-                triangles[tris + 0] = vert + 0;
-                triangles[tris + 1] = vert + xSize + 1;
-                triangles[tris + 2] = vert + 1;
-                triangles[tris + 3] = vert + 1;
-                triangles[tris + 4] = vert + xSize + 1;
-                triangles[tris + 5] = vert + xSize + 2;
+                int vertIndex = z * (xSize + 1) + x;
 
-                vert++;
+                // First triangle (lower left)
+                triangles[tris + 0] = vertIndex;                  // Current vertex
+                triangles[tris + 1] = vertIndex + (xSize + 1);    // Vertex below
+                triangles[tris + 2] = vertIndex + 1;              // Vertex to right
+
+                // Second triangle (upper right)
+                triangles[tris + 3] = vertIndex + 1;              // Vertex to right
+                triangles[tris + 4] = vertIndex + (xSize + 1);    // Vertex below
+                triangles[tris + 5] = vertIndex + (xSize + 1) + 1; // Vertex below and to right
+
                 tris += 6;
             }
-            vert++;
         }
     }
 
@@ -83,45 +86,48 @@ public class MeshGenerator : MonoBehaviour
     {
         mesh.Clear();
         
-        transform.position = new Vector3(-xSize/2, 0, 0-7.5f);
+        transform.position = new Vector3(-xSize*2, 0, 0-7.5f);
 
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.colors = vertexColors; // Apply the vertex colors to the mesh
         mesh.RecalculateNormals();
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            vertices[i] += new Vector3(-xSize *2, 0, 0);
+        }
         //OnDrawGizmos();
     }
 
     void generateTrees()
     {
-        int step = 6; // Check every 6th vertex to space things out
+        int step = Random.Range(1, 3); // Check every 6th vertex to space things out
 
         for (int i = 0; i < vertices.Length; i += step)
         {
-            if (i == xSize)
-            {
-                i += xSize * step;
-            }
-
-            float xValue = vertices[i].x > xSize / 2 ? vertices[i].x - xSize : vertices[i].x;
+            step = Random.Range(1, 3);
+            float xValue = vertices[i].x;
             RaycastHit hit;
             float yValue = vertices[i].y + 4;
             Vector3 origin = new Vector3(xValue, 10, vertices[i].z);
             Vector3 direction = Vector3.down;
             float randomScale = Random.Range(0.8f, 1.4f);
-            string biome = GetBiome(vertices[i].x, vertices[i].z);
+            int randomTree = 1; //Random.Range(0,4);
 
+            // Apply the biome offset here as well
+            string biome = GetBiome((vertices[i].x), (vertices[i].z)); // Apply offsets to biome
             float noise = Mathf.PerlinNoise(vertices[i].x * noiseScale, vertices[i].z * noiseScale);
             GameObject newTree;
+
             if (noise > noiseThreshold)
             {
                 Vector3 positionToGenerate = new Vector3(xValue, 10, vertices[i].z);
                 switch (biome)
                 {
                     case "Oak":
+                        if (randomTree == 0) { }
                         yValue = vertices[i].y;
-                        newTree = Instantiate(myPrefabs[1], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
-
+                        newTree = Instantiate(myPrefabs[3], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                         newTree.transform.localScale *= randomScale;
                         if (Physics.Raycast(origin, direction, out hit, 200f))
                         {
@@ -129,15 +135,38 @@ public class MeshGenerator : MonoBehaviour
                         }
                         newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         break;
-                    case "Spruce":
-                        newTree = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
 
-                        newTree.transform.localScale *= randomScale;
-                        if (Physics.Raycast(origin, direction, out hit, 200f))
+                    case "Spruce":
+                        if (randomTree == 1)
                         {
-                            yValue = (hit.point.y + 3.5f) * randomScale;
+                            newTree = Instantiate(myPrefabs[1], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y + 0.2f) * randomScale;
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         }
-                        newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        if (randomTree == 2)
+                        {
+                            newTree = Instantiate(myPrefabs[2], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y + 5.2f) * randomScale;
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        }
+                        if (randomTree == 3)
+                        {
+                            newTree = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree.transform.localScale *= randomScale;
+                            if (Physics.Raycast(origin, direction, out hit, 200f))
+                            {
+                                yValue = (hit.point.y + 3.2f) * randomScale;
+                            }
+                            newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
+                        }
                         break;
                 }
             }
