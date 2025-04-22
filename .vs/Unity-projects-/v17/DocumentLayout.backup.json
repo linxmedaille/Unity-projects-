@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\procedural generations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\ressourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ressourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,8 +30,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ressourceManager.cs",
+              "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\ressourceManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\ressourceManager.cs",
+              "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\ressourceManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\ressourceManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:51:56.104Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +52,14 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\treeScript.cs",
               "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\treeScript.cs",
               "RelativeToolTip": "Assets\\scripts\\treeScript.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAswGAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T22:11:44.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "vertex shader.shader",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\assets\\textures\\vertex shader.shader",
               "RelativeDocumentMoniker": "Assets\\assets\\textures\\vertex shader.shader",
@@ -61,13 +77,13 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\Procedural generations.cs",
               "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Procedural generations.cs",
               "RelativeToolTip": "Assets\\scripts\\Procedural generations.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAwGAAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowJwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T09:09:17.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerMovement.cs",
