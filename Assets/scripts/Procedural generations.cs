@@ -126,7 +126,7 @@ public class MeshGenerator : MonoBehaviour
                 {
                     case "Oak":
                         if (randomTree == 0) {
-                            newTree = Instantiate(myPrefabs[3], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
@@ -136,7 +136,7 @@ public class MeshGenerator : MonoBehaviour
                         }
                         if (randomTree == 1)
                         {
-                            newTree = Instantiate(myPrefabs[4], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree = Instantiate(myPrefabs[1], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
@@ -150,7 +150,7 @@ public class MeshGenerator : MonoBehaviour
                     case "Spruce":
                         if (randomTree == 0)
                         {
-                            newTree = Instantiate(myPrefabs[1], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree = Instantiate(myPrefabs[3], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
@@ -160,7 +160,7 @@ public class MeshGenerator : MonoBehaviour
                         }
                         if (randomTree == 4)
                         {
-                            newTree = Instantiate(myPrefabs[2], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree = Instantiate(myPrefabs[4], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
@@ -170,7 +170,7 @@ public class MeshGenerator : MonoBehaviour
                         }
                         if (randomTree == 4)
                         {
-                            newTree = Instantiate(myPrefabs[0], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
+                            newTree = Instantiate(myPrefabs[5], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
