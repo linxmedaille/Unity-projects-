@@ -1,16 +1,16 @@
+using TMPro;
 using UnityEngine;
 
-public class GameUI : MonoBehaviour
+public class ResourceUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public TMP_Text woodText;
+    public TMP_Text stoneText;
 
-    // Update is called once per frame
+    public ressourceManager ressourceManager;
+
     void Update()
     {
-        
+        woodText.text = "Wood: " + ressourceManager.getWood();
+        stoneText.text = "Stone: " + ressourceManager.getStone();
     }
 }
