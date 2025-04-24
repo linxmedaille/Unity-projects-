@@ -1,9 +1,12 @@
+using UnityEditor.Build;
 using UnityEngine;
 
 public class ressourceManager : MonoBehaviour
 {
     private int wood = 0;
     private int stone = 0;
+    private int gold = 0;
+    private int iron = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public int getWood()
@@ -14,6 +17,14 @@ public class ressourceManager : MonoBehaviour
     {
         return stone;
     }
+    public int getGold()
+    {
+        return gold;
+    }
+    public int getIron()
+    {
+        return iron;
+    }
     public void addWood(int wood)
     {
         this.wood += wood;
@@ -21,6 +32,14 @@ public class ressourceManager : MonoBehaviour
     public void addStone(int stone)
     {
         this.stone += stone;
+    }
+    public void addGold(int gold)
+    {
+        this.gold += gold;
+    }
+    public void addIron(int iron)
+    {
+        this.iron += iron;
     }
     public void breakTree()
     {

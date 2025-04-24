@@ -47,7 +47,7 @@ public class MeshGenerator : MonoBehaviour
         {
             for (int x = 0; x <= xSize; x++)
             {
-                float y = Mathf.PerlinNoise(x * strength, z * strength) * 4;
+                float y = Mathf.PerlinNoise(x * strength, z * strength) * 10;
                 vertices[i] = new Vector3(x * 4f, y, z * 4f);
 
                 // Apply biome offset when determining biome color
@@ -165,27 +165,27 @@ public class MeshGenerator : MonoBehaviour
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
-                                yValue = (hit.point.y - 0.2f);
+                                yValue = (hit.point.y);
                             }
                             newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         }
-                        if (randomTree == 4)
+                        if (randomTree == 1)
                         {
                             newTree = Instantiate(myPrefabs[4], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
-                                yValue = (hit.point.y + 5.2f) * randomScale;
+                                yValue = (hit.point.y);
                             }
                             newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         }
-                        if (randomTree == 4)
+                        if (randomTree == 2)
                         {
                             newTree = Instantiate(myPrefabs[5], positionToGenerate, Quaternion.Euler(-90f, Random.Range(0f, 360f), 0f));
                             newTree.transform.localScale *= randomScale;
                             if (Physics.Raycast(origin, direction, out hit, 200f))
                             {
-                                yValue = (hit.point.y + 3.2f) * randomScale;
+                                yValue = (hit.point.y);
                             }
                             newTree.transform.position = new Vector3(xValue, yValue, vertices[i].z);
                         }
@@ -237,8 +237,8 @@ public class MeshGenerator : MonoBehaviour
 
         if (biomeValue < 0.3f) return "Oak";
         else if (biomeValue < 0.5f) return "Grassland";
-        else if (biomeValue < 0.7f) return "Birch";
-        else if (biomeValue < 0.9f) return "Spruce";
+        else if (biomeValue < 0.6f) return "Birch";
+        else if (biomeValue < 0.8f) return "Spruce";
         else return "Snow";
     }
 

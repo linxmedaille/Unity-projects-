@@ -6,7 +6,7 @@ public class TreeScript : MonoBehaviour
     private Renderer[] rends;    
     private bool isMouseOver = false; 
     private float holdTime = 0f;  
-    public float requiredHoldTime = 2f; 
+    public float requiredHoldTime = 1f; 
     private bool treeBroken = false;
     private ressourceManager ressourceManager;
     void Start()
