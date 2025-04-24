@@ -50,7 +50,7 @@ public class MeshGenerator : MonoBehaviour
                 float y = Mathf.PerlinNoise(x * strength, z * strength) * 10;
                 vertices[i] = new Vector3(x * 4f, y, z * 4f);
 
-                // Apply biome offset when determining biome color
+
                 string biome = GetBiome((vertices[i].x), (vertices[i].z));
                 vertexColors[i] = GetBiomeColor(biome); // Assign color based on biome
 
@@ -90,12 +90,16 @@ public class MeshGenerator : MonoBehaviour
 
         mesh.vertices = vertices;
         mesh.triangles = triangles;
-        mesh.colors = vertexColors; // Apply the vertex colors to the mesh
+         // Apply the vertex colors to the mesh
         mesh.RecalculateNormals();
         for (int i = 0; i < vertices.Length; i++)
         {
-            vertices[i] += new Vector3(-xSize *2, 0, 0);
+            vertices[i] += new Vector3(-xSize * 2, 0, 0);
+            string biome = GetBiome(vertices[i].x, vertices[i].z);
+            vertexColors[i] = GetBiomeColor(biome);
         }
+
+        mesh.colors = vertexColors;
         //OnDrawGizmos();
     }
 
