@@ -9,7 +9,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private int minutes;
     private int hours;
     private float timeSeconds = 0;
-    private int angle = 0;
     private float daySpeed = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

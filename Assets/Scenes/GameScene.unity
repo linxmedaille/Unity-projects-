@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.46626553, g: 0.6002344, b: 0.93962264, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 226ced0617599ce42b284a634f800a1c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &214057693
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -81.64433
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9754331
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14359361
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
+      propertyPath: m_Name
+      value: cedre
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c43dc5241ca11ba46a420405ac05f354, type: 3}
 --- !u!1 &254272709
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +525,7 @@ GameObject:
   - component: {fileID: 632314679}
   - component: {fileID: 632314678}
   - component: {fileID: 632314677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: meshObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,16 +544,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1946e510fa2ebe04ab206c89b2756c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPrefabs:
-  - {fileID: 1038736638339361182, guid: 8924cb2c11c9dc54094882cd483c0c4e, type: 3}
+  trees:
+  - {fileID: 903366240868366339, guid: 66d5e9d6a8e22f74b9e6130294a94e90, type: 3}
+  - {fileID: 1329894123122292791, guid: e4ad6145bb99f73498ac30faf50af006, type: 3}
   - {fileID: 5947121325530029570, guid: f22364e2cec7b1d409fbc175c89fb041, type: 3}
-  - {fileID: 7936415424794629687, guid: 62affe77851163246b83b5dc562a450e, type: 3}
   - {fileID: 8959915360460082872, guid: 2d25699a7a8ef8c41b1effc9ddeb84a3, type: 3}
   - {fileID: 2905552186549635291, guid: c3edf42fb7e4fea4c9ed849f3e456137, type: 3}
   - {fileID: 3046561183666320496, guid: 503f1853e293bc04c917c4348155cf9e, type: 3}
   - {fileID: 7150144535813145691, guid: 1c675d5ee788f21478266c07fa0bb04d, type: 3}
   - {fileID: 8336468811625201605, guid: b0e227e56ee5ef343bdb75df07a29a46, type: 3}
   - {fileID: 6865322901029468805, guid: 7c6c4f1a1e79bb240864a61050a88443, type: 3}
+  village:
+  - {fileID: 7529957421532766110, guid: e781312c27d54e74189cc5dcd0c26c4d, type: 3}
   noiseScale: 0.4
   noiseThreshold: 0.4
   biomeScale: 0.005
@@ -534,7 +593,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ba77a71c1c2cbdc43936d56d9d5e3a47, type: 2}
+  - {fileID: 2100000, guid: f1e58bcbb3d4ab445ae667f3fb0e59c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -922,6 +981,7 @@ GameObject:
   - component: {fileID: 1113991026}
   - component: {fileID: 1113991025}
   - component: {fileID: 1113991024}
+  - component: {fileID: 1113991030}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -1063,6 +1123,24 @@ Transform:
   - {fileID: 899933072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1113991030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113991023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42679e6922546564ab38416329177d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToPlace: {fileID: 7529957421532766110, guid: e781312c27d54e74189cc5dcd0c26c4d, type: 3}
+  placementMask:
+    serializedVersion: 2
+    m_Bits: 64
+  rotateSpeed: 90
+  previewMaterial: {fileID: -2813467912831258332, guid: cfff923b0a8849946aa645cf22d87c5f, type: 3}
 --- !u!1 &1254284490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,3 +1561,4 @@ SceneRoots:
   - {fileID: 254272712}
   - {fileID: 1384468113}
   - {fileID: 1544774723}
+  - {fileID: 214057693}
