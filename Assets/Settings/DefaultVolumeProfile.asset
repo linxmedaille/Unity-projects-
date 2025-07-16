@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_Value: {x: 0.9740227, y: 1, z: 0.99309623, w: 0}
   gamma:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0}
@@ -214,7 +214,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   neutralHDRRangeReductionMode:
     m_OverrideState: 1
     m_Value: 2
@@ -363,13 +363,13 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.9
+    m_Value: 6.94
   intensity:
     m_OverrideState: 1
     m_Value: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.653
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -483,7 +483,7 @@ MonoBehaviour:
     m_Value: 0
   tintColor:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.08679241, g: 0, b: 0, a: 1}
   bloomMip:
     m_OverrideState: 1
     m_Value: 1
@@ -546,11 +546,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   shadows:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_OverrideState: 0
+    m_Value: {x: 0.98572546, y: 0.9782954, z: 1, w: -0.5821204}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.020790013}
   highlights:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0}
@@ -592,15 +592,15 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1
-          outSlope: 1
+          inSlope: 0.33444276
+          outSlope: 0.33444276
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.6304348
-          value: 0.9669295
+          time: 0.5196481
+          value: 1
           inSlope: -0.17028837
           outSlope: -0.17028837
           tangentMode: 0
@@ -934,16 +934,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
   m_Name: ChannelMixer
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   redOutRedIn:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: -8
   redOutGreenIn:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 200
   redOutBlueIn:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: -200
   greenOutRedIn:
     m_OverrideState: 1
     m_Value: 0

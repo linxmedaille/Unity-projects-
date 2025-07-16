@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\ressourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ressourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\procedural generations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\procedural generations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|c:\\users\\linxm\\onedrive\\documents\\github\\unity-projects-\\assets\\scripts\\main menu\\menubehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main menu\\menubehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|c:\\users\\linxm\\onedrive\\documents\\github\\unity-projects-\\assets\\scripts\\build mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\build mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|c:\\users\\linxm\\onedrive\\documents\\github\\unity-projects-\\assets\\scripts\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|c:\\users\\linxm\\onedrive\\documents\\github\\unity-projects-\\assets\\scripts\\procedural generations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\procedural generations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\ui\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\textmesh pro\\shaders\\tmp_bitmap-mobile.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\shaders\\tmp_bitmap-mobile.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\ressourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ressourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD24FDED-D3FF-F593-76C5-4E12D45C5D3C}|Assembly-CSharp.csproj|C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\assets\\scripts\\treescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,37 +50,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TimeManager.cs",
-              "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\TimeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\TimeManager.cs",
-              "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\TimeManager.cs",
-              "RelativeToolTip": "Assets\\scripts\\TimeManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MenuBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Main Menu\\MenuBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Main Menu\\MenuBehavior.cs",
+              "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Main Menu\\MenuBehavior.cs",
+              "RelativeToolTip": "Assets\\scripts\\Main Menu\\MenuBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T14:47:58.989Z",
+              "WhenOpened": "2025-07-15T19:26:21.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Build mode.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Build mode.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Build mode.cs",
               "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Build mode.cs",
               "RelativeToolTip": "Assets\\scripts\\Build mode.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA5wB8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwB8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T14:40:22.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GameUI.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\UI\\GameUI.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\UI\\GameUI.cs",
@@ -88,19 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "ressourceManager.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\ressourceManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\ressourceManager.cs",
               "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\ressourceManager.cs",
               "RelativeToolTip": "Assets\\scripts\\ressourceManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T18:51:56.104Z"
+              "WhenOpened": "2025-04-22T18:51:56.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "treeScript.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\treeScript.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\treeScript.cs",
@@ -112,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "vertex shader.shader",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\assets\\textures\\vertex shader.shader",
               "RelativeDocumentMoniker": "Assets\\assets\\textures\\vertex shader.shader",
@@ -124,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "TMP_Bitmap-Mobile.shader",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\TextMesh Pro\\Shaders\\TMP_Bitmap-Mobile.shader",
               "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Shaders\\TMP_Bitmap-Mobile.shader",
@@ -136,20 +141,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Procedural generations.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Procedural generations.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Procedural generations.cs",
               "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\Procedural generations.cs",
               "RelativeToolTip": "Assets\\scripts\\Procedural generations.cs",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAvwAIBAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T09:09:17.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "TimeManager.cs",
+              "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\TimeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\TimeManager.cs",
+              "ToolTip": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\TimeManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\TimeManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T14:47:58.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\linxm\\OneDrive\\Documents\\GitHub\\Unity-projects-\\Assets\\scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerMovement.cs",
